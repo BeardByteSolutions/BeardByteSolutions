@@ -7,12 +7,86 @@
     <!-- Linking to Google Fonts for Roboto -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #0a0a0a, #1f1f1f);
+            color: #d1d1d1;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+        }
+        .logo img {
+            width: 80px;
+            border-radius: 50%;
+            transition: transform 0.3s ease-in-out;
+        }
+        .logo img:hover {
+            transform: rotate(360deg);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #d1d1d1;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #00bcd4;
+        }
+        .main-content h1 {
+            font-size: 3rem;
+            margin-top: 3rem;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .main-content p {
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            opacity: 0.8;
+        }
+        .about-us {
+            margin: 3rem auto;
+            padding: 2rem;
+            background: rgba(15, 15, 15, 0.9);
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 188, 212, 0.5);
+            max-width: 800px;
+            text-align: left;
+            line-height: 1.8;
+        }
+        .about-us b {
+            font-size: 1.8rem;
+            color: #00bcd4;
+        }
+        footer {
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.8);
+            margin-top: 3rem;
+            box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.8);
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation bar -->
     <header>
         <div class="logo">
-            <img src="https://github.com/BeardByteSolutions/BeardByteSolutions/blob/main/BeardByte.jpg?raw=true">
+            <img src="https://github.com/BeardByteSolutions/BeardByteSolutions/blob/main/BeardByte.jpg?raw=true" alt="BeardByte Logo">
         </div>
         <nav>
             <ul>
@@ -28,16 +102,16 @@
     <!-- Main content -->
     <section id="home" class="main-content">
         <h1>Welcome to BeardByte Solutions</h1>
-        <p>Your go-to solution for web development, apps, and automation services.
-        </p>
+        <p>Your go-to solution for web development, apps, and automation services.</p>
     </section>
+
     <section class="about-us">
         <b>About Us:</b>
-    We are a married couple who started a business in our apartment while still in college. My name is Mya, I am an aspiring Software Engineer so I will be taking your requests and creating magic. My husband's name is Randall, he is the cyber security expert so he will be making sure your "magic" is safe, secure, and ready to go.
-    Our goal is to help people get the best websites, apps, and automations for their businesses as possible, for an affordable rate.
-    Feel free to check out our portfolio for ideas of what we do, and our services page to find a more in depth description of what we offer.
-    Thank you so much for checking us out, and we sincerely hope to hear from you with a request.
-</section>
+        <p>We are a married couple who started a business in our apartment while still in college. My name is Mya, I am an aspiring Software Engineer so I will be taking your requests and creating magic. My husband's name is Randall, he is the cybersecurity expert making sure your "magic" is safe, secure, and ready to go.</p>
+        <p>Our goal is to help people get the best websites, apps, and automations for their businesses at an affordable rate.</p>
+        <p>Feel free to check out our portfolio for ideas of what we do, and our services page to find a more in-depth description of what we offer.</p>
+        <p>Thank you so much for checking us out, and we sincerely hope to hear from you with a request.</p>
+    </section>
 
     <!-- Footer -->
     <footer>
