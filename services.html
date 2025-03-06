@@ -1,16 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services - BeardByte Solutions</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #0a0a0a, #1f1f1f);
+            color: #d1d1d1;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 0 15px rgba(0, 188, 212, 0.6);
+        }
+        header img {
+            width: 80px;
+            border-radius: 50%;
+            transition: transform 0.3s ease-in-out;
+        }
+        header img:hover {
+            transform: rotate(360deg);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            padding: 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #d1d1d1;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #00bcd4;
+        }
+        .services-intro {
+            padding: 3rem 1rem;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .services-intro h1 {
+            color: #00bcd4;
+            font-size: 3rem;
+        }
+        .service-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+        .service-item {
+            background: rgba(15, 15, 15, 0.9);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 188, 212, 0.6);
+            transition: transform 0.3s ease-in-out;
+        }
+        .service-item:hover {
+            transform: scale(1.05);
+        }
+        .cta {
+            padding: 3rem 1rem;
+            text-align: center;
+            background: rgba(0, 188, 212, 0.1);
+            border-top: 2px solid #00bcd4;
+        }
+        .cta h2 {
+            color: #00bcd4;
+            margin-bottom: 1rem;
+        }
+        .cta-btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: #00bcd4;
+            color: #0a0a0a;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 700;
+            transition: background 0.3s ease-in-out;
+        }
+        .cta-btn:hover {
+            background: #0097a7;
+        }
+        footer {
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.8);
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
 </head>
-
 <body>
-    <!-- Header Section (same as homepage) -->
     <header>
+        <img src="https://github.com/BeardByteSolutions/BeardByteSolutions/blob/main/BeardByte.jpg?raw=true" alt="BeardByte Logo">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -20,51 +115,36 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <!-- Logo Section -->
-        <div class="logo">
-             <img src="https://github.com/BeardByteSolutions/BeardByteSolutions/blob/main/BeardByte.jpg?raw=true">
-        </div>
     </header>
 
-    <!-- Main Content Section -->
-    <main>
-        <section class="services-intro">
-            <h1>Our Services</h1>
-            <p>At BeardByte Solutions, we specialize in custom websites, applications, and future-ready automation. Check out the details of our offerings below:</p>
-        </section>
+    <section class="services-intro">
+        <h1>Our Services</h1>
+        <p>At BeardByte Solutions, we specialize in custom websites, applications, and future-ready automation.</p>
+    </section>
 
-        <section class="service-list">
-            <!-- Service 1 -->
-            <div class="service-item">
-                <h2>Custom Website Development</h2>
-                <p>We create sleek, user-friendly websites tailored to your business needs. Whether you're a startup or an established company, we have the tools and expertise to bring your vision to life.</p>
-            </div>
+    <section class="service-list">
+        <div class="service-item">
+            <h2>Custom Website Development</h2>
+            <p>We create sleek, user-friendly websites tailored to your business needs.</p>
+        </div>
+        <div class="service-item">
+            <h2>App Development</h2>
+            <p>Mobile and web applications offering seamless user experiences from concept to deployment.</p>
+        </div>
+        <div class="service-item">
+            <h2>Automation Solutions</h2>
+            <p>Optimizing business processes to increase efficiency while integrating seamlessly with your systems.</p>
+        </div>
+    </section>
 
-            <!-- Service 2 -->
-            <div class="service-item">
-                <h2>App Development</h2>
-                <p>Our team builds mobile and web applications that offer a seamless experience for your users. From idea to deployment, we guide you through every step of the app development process.</p>
-            </div>
+    <section class="cta">
+        <h2>With In-House Cyber Security For Your Products, This is a Win-Win!</h2>
+        <p>Let's build your future together. Get in touch today to discuss your custom solution!</p>
+        <a href="contact.html" class="cta-btn">Contact Us</a>
+    </section>
 
-            <!-- Service 3 -->
-            <div class="service-item">
-                <h2>Automation Solutions</h2>
-                <p>Ready to optimize your business processes? We provide automation solutions that save time and increase efficiency, all while integrating seamlessly with your current systems.</p>
-            </div>
-        </section>
-
-        <!-- Call-to-Action Section -->
-        <section class="cta">
-            <h2> With In-House Cyber Security For Your Products As Well, This is a Win-Win! Let's Build Your Future Together</h2>
-            <p>Get in touch with us today to discuss how we can help you take your business to the next level with our custom solutions!</p>
-            <a href="contact.html" class="cta-btn">Contact Us</a>
-        </section>
-    </main>
-
-    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2025 BeardByte Solutions - All Rights Reserved</p>
+        <p>&copy; 2025 BeardByte Solutions. All Rights Reserved.</p>
     </footer>
 </body>
-
 </html>
