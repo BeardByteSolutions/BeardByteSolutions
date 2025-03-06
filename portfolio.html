@@ -4,54 +4,141 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - BeardByte Solutions</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to your existing CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #0a0a0a, #1f1f1f);
+            color: #d1d1d1;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 0 15px rgba(0, 188, 212, 0.6);
+        }
+        header img {
+            width: 80px;
+            border-radius: 50%;
+            transition: transform 0.3s ease-in-out;
+        }
+        header img:hover {
+            transform: rotate(360deg);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            padding: 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #d1d1d1;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #00bcd4;
+        }
+        .portfolio {
+            padding: 3rem 1rem;
+        }
+        .portfolio h1 {
+            color: #00bcd4;
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+        .portfolio-item {
+            background: rgba(15, 15, 15, 0.9);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 188, 212, 0.6);
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+        .portfolio-item:hover {
+            transform: scale(1.05);
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: #00bcd4;
+            color: #0a0a0a;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 700;
+            transition: background 0.3s ease-in-out;
+        }
+        .btn:hover {
+            background: #0097a7;
+        }
+        footer {
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.8);
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
 </head>
 <body>
-    <!-- Header Section -->
     <header>
+        <img src="https://github.com/BeardByteSolutions/BeardByteSolutions/blob/main/BeardByte.jpg?raw=true" alt="BeardByte Logo">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="automations.html">Automations</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Portfolio Section -->
     <section class="portfolio">
         <h1>My Projects</h1>
-        <div class="portfolio-grid">
-            <!-- Project 1 -->
-            <div class="portfolio-item">
-                <img src="project1.jpg" alt="Project 1">
-                <h2>Project 1 Title</h2>
-                <p>A brief description of the project goes here. Explain the tech stack, what it does, and the result.</p>
-                <a href="project1.html" class="btn">View Project</a>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="portfolio-item">
-                <img src="project2.jpg" alt="Project 2">
-                <h2>Project 2 Title</h2>
-                <p>A brief description of the project goes here. Explain the tech stack, what it does, and the result.</p>
-                <a href="project2.html" class="btn">View Project</a>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="portfolio-item">
-                <img src="project3.jpg" alt="Project 3">
-                <h2>Project 3 Title</h2>
-                <p>A brief description of the project goes here. Explain the tech stack, what it does, and the result.</p>
-                <a href="project3.html" class="btn">View Project</a>
-            </div>
-
-            <!-- Add more projects as needed -->
+        <div class="portfolio-grid" id="projects-container">
+            <script>
+                const projects = [
+                    { title: "Project 1", image: "project1.jpg", description: "A brief description of Project 1.", link: "project1.html" },
+                    { title: "Project 2", image: "project2.jpg", description: "A brief description of Project 2.", link: "project2.html" },
+                    { title: "Project 3", image: "project3.jpg", description: "A brief description of Project 3.", link: "project3.html" }
+                ];
+                
+                const container = document.getElementById("projects-container");
+                projects.forEach(project => {
+                    container.innerHTML += `
+                    <div class="portfolio-item">
+                        <img src="${project.image}" alt="${project.title}">
+                        <h2>${project.title}</h2>
+                        <p>${project.description}</p>
+                        <a href="${project.link}" class="btn">View Project</a>
+                    </div>`;
+                });
+            </script>
         </div>
     </section>
 
-    <!-- Footer Section -->
     <footer>
         <p>&copy; 2025 BeardByte Solutions. All Rights Reserved.</p>
     </footer>
