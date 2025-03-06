@@ -109,3 +109,32 @@ button {
 button:hover {
     background-color: #1f6f76; /* Darker Navy Blue */
 }
+/* Default styles for mobile-first design */
+form {
+    width: 90%; /* Take up most of the screen on small screens */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea {
+    width: 100%; /* Make inputs fill their container */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Desktop styles */
+@media screen and (min-width: 768px) {
+    form {
+        width: 50%; /* Limit the form width to 50% on larger screens */
+    }
+
+    input, textarea {
+        width: 100%; /* Ensure inputs and textareas fill the form container */
+    }
+}
+
