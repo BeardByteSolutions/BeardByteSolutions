@@ -17,8 +17,8 @@ header {
 }
 
 header .logo img {
-    max-width: 120px;  /* Adjust as necessary */
-    height: 120px;      /* Keeps the aspect ratio intact */
+   max-width: 120px;  /* Adjust this value as per your preferred size */
+    height: auto;
 }
 
 nav ul {
