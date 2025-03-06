@@ -1,0 +1,73 @@
+/* General body styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1A1A1A; /* Dark background */
+    color: #D3D3D3; /* Light gray text */
+}
+
+/* Header and logo */
+header {
+    background-color: #003366; /* Navy blue */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 50px; /* Adjust logo size */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #D3D3D3; /* Light gray */
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: #00BFFF; /* Accent color */
+}
+
+/* Main content section */
+.main-content {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #2A2A2A; /* Black */
+}
+
+.main-content h1 {
+    font-size: 3rem;
+    color: #00BFFF; /* Accent color */
+}
+
+.main-content p {
+    font-size: 1.5rem;
+    color: #D3D3D3;
+}
+
+/* Footer */
+footer {
+    background-color: #003366; /* Navy blue */
+    padding: 10px;
+    text-align: center;
+    color: #D3D3D3;
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0;
+}
