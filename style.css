@@ -222,3 +222,73 @@ footer {
     color: #ccc;
 }
 
+/* General styles for smaller devices */
+@media only screen and (max-width: 768px) {
+    /* Header and Navigation */
+    header h1 {
+        font-size: 1.8rem; /* Smaller logo text on mobile */
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column; /* Stack the navigation links vertically */
+        align-items: center; /* Center the nav items */
+    }
+
+    nav a {
+        font-size: 1.2rem; /* Increase the font size for readability */
+        padding: 10px 0;
+    }
+
+    /* Main content and sections */
+    main {
+        padding: 15px; /* Add padding to make the content not too cramped */
+    }
+
+    /* Coming Soon Section */
+    .coming-soon {
+        padding: 20px;
+        font-size: 1rem; /* Adjust font size for mobile */
+    }
+
+    .coming-soon h3 {
+        font-size: 1.8rem; /* Slightly smaller heading for mobile */
+    }
+
+    .coming-soon p {
+        font-size: 1rem; /* Make the text more readable on smaller screens */
+    }
+
+    /* Footer */
+    footer {
+        font-size: 1rem; /* Smaller footer text */
+        text-align: center;
+    }
+
+    /* Ensure images scale nicely */
+    img {
+        max-width: 100%; /* Make images responsive */
+        height: auto;
+    }
+}
+
+/* For very small screens (like smartphones in portrait mode) */
+@media only screen and (max-width: 480px) {
+    nav a {
+        font-size: 1.1rem; /* Slightly smaller font for ultra small screens */
+        padding: 8px 0; /* Reduce padding to save space */
+    }
+
+    .coming-soon h3 {
+        font-size: 1.6rem; /* Even smaller text for the heading */
+    }
+
+    .coming-soon p {
+        font-size: 0.9rem; /* Smaller paragraph text */
+    }
+
+    /* Footer */
+    footer {
+        font-size: 0.9rem; /* Slightly smaller footer text for ultra small screens */
+    }
+}
