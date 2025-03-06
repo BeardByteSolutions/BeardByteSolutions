@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeardByte Solutions</title>
+    <!-- Linking to Google Fonts for Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <header>
+        <div class="logo">
+            <!-- Placeholder for your logo -->
+            <img src="your-logo-path.png" alt="BeardByte Solutions Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="automations.html">Automations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <section id="home" class="main-content">
+        <h1>Welcome to BeardByte Solutions</h1>
+        <p>Your go-to solution for web development, apps, and automation services.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 BeardByte Solutions. All rights reserved.</p>
+    </footer>
+</body>
+</html>
