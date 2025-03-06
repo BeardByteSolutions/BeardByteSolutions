@@ -1,95 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BeardByte Solutions™</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            transition: background 0.5s, color 0.5s;
-        }
-        body.dark-mode {
-            background-color: #0a0a23;
-            color: #f0f0f0;
-        }
-        body.light-mode {
-            background-color: #f0f0f0;
-            color: #0a0a23;
-        }
-        header {
-            padding: 2rem 0;
-            background-color: #001f3f;
-        }
-        h1 {
-            font-size: 3rem;
-        }
-        p {
-            font-size: 1.2rem;
-        }
-        .btn {
-            display: inline-block;
-            margin: 2rem;
-            padding: 1rem 2rem;
-            background: #001f3f;
-            color: #f0f0f0;
-            text-decoration: none;
-            border: 2px solid silver;
-            border-radius: 8px;
-            transition: 0.3s;
-        }
-        .btn:hover {
-            background: silver;
-            color: #001f3f;
-        }
-        footer {
-            padding: 1rem;
-            background: #001f3f;
-            margin-top: 3rem;
-        }
-        #toggle-mode {
-            cursor: pointer;
-            padding: 0.5rem 1rem;
-            border: none;
-            background: silver;
-            color: #001f3f;
-            border-radius: 8px;
-            margin-top: 1rem;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BeardByte Solutions</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="dark-mode">
-<header>
-    <h1>Welcome to BeardByte Solutions™</h1>
-    <p>Building Better Gigs, One Byte at a Time.</p>
-</header>
-<main>
-    <p>Custom Websites, Apps & Automations for Businesses</p>
-    <button id="toggle-mode">Switch to Light Mode</button>
-    <a href="mailto:beardbytesolutions@gmail.com" class="btn">Contact Us</a>
-</main>
-<footer>
-    <p>© 2025 BeardByte Solutions™ | Powered by Purpose</p>
-</footer>
-<script>
-    const toggleBtn = document.getElementById('toggle-mode');
-    const body = document.body;
+<body>
+  <header>
+    <div class="logo">
+      <h1>BeardByte Solutions™</h1>
+    </div>
+    <button class="theme-toggle" id="theme-toggle">Switch Mode</button>
+  </header>
 
-    toggleBtn.addEventListener('click', () => {
-        if (body.classList.contains('dark-mode')) {
-            body.classList.remove('dark-mode');
-            body.classList.add('light-mode');
-            toggleBtn.textContent = 'Switch to Dark Mode';
-        } else {
-            body.classList.remove('light-mode');
-            body.classList.add('dark-mode');
-            toggleBtn.textContent = 'Switch to Light Mode';
-        }
-    });
-</script>
+  <nav>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#automation">Automations</a></li>
+    </ul>
+  </nav>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <p>Websites, Apps, and Automations for businesses.</p>
+  </section>
+
+  <section id="portfolio">
+    <h2>Our Portfolio</h2>
+    <p>Check out some of our latest work!</p>
+  </section>
+
+  <section id="automation">
+    <h2>Automation Demos</h2>
+    <p>Explore our interactive automation solutions!</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 BeardByte Solutions™</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
