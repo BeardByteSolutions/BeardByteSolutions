@@ -1,0 +1,63 @@
+/* ========== BeardByte Solutions™ Global Styles ========== */
+:root {
+  --primary: #121212; /* Black Background */
+  --secondary: #0A75BC; /* Electric Blue */
+  --accent: #C0C0C0; /* Silver Highlights */
+  --text: #ffffff; /* White Text */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--primary);
+  color: var(--text);
+  text-align: center;
+}
+
+nav {
+  background: var(--secondary);
+  padding: 1rem 0;
+  text-align: center;
+}
+
+nav a {
+  color: var(--accent);
+  text-decoration: none;
+  margin: 0 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: var(--text);
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+
+button {
+  background: var(--secondary);
+  color: var(--text);
+  padding: 1rem 2rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: var(--accent);
+  color: var(--primary);
+}
+
+footer {
+  margin-top: 4rem;
+  padding: 1rem;
+  background: var(--secondary);
+}
