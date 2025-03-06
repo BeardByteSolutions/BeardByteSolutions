@@ -3,40 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BeardByte Solutions</title>
+  <title>BeardByte Solutions™</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="dark-mode">
+  <!-- Header Section with Logo Placeholder -->
   <header>
     <div class="logo">
-      <h1>BeardByte Solutions™</h1>
+      <img src="logo-placeholder.png" alt="BeardByte Solutions™ Logo" id="logo">
     </div>
     <button class="theme-toggle" id="theme-toggle">Switch Mode</button>
   </header>
 
+  <!-- Navigation Menu -->
   <nav>
     <ul>
+      <li><a href="#home">Home</a></li>
       <li><a href="#services">Services</a></li>
       <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#automation">Automations</a></li>
+      <li><a href="#automations">Automations</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
+  <!-- Home Section -->
+  <section id="home">
+    <h2>Welcome to BeardByte Solutions™</h2>
+    <p>Building better gigs, one byte at a time.</p>
+  </section>
+
+  <!-- Services Section -->
   <section id="services">
     <h2>Our Services</h2>
-    <p>Websites, Apps, and Automations for businesses.</p>
+    <p>We offer top-tier websites, apps, and automations for businesses. Here are our packages:</p>
+    <ul>
+      <li>Basic Website Package</li>
+      <li>Advanced Website + App Package</li>
+      <li>Automation Setup & Integration</li>
+    </ul>
+    <p>Pricing: Contact us for a personalized quote!</p>
   </section>
 
+  <!-- Portfolio Section -->
   <section id="portfolio">
     <h2>Our Portfolio</h2>
-    <p>Check out some of our latest work!</p>
+    <p>Check out some of our previous work:</p>
+    <div class="portfolio-grid">
+      <div class="project">
+        <img src="project1.jpg" alt="Project 1">
+        <p>Project 1</p>
+      </div>
+      <div class="project">
+        <img src="project2.jpg" alt="Project 2">
+        <p>Project 2</p>
+      </div>
+      <div class="project">
+        <img src="project3.jpg" alt="Project 3">
+        <p>Project 3</p>
+      </div>
+    </div>
   </section>
 
-  <section id="automation">
-    <h2>Automation Demos</h2>
-    <p>Explore our interactive automation solutions!</p>
+  <!-- Automations Section -->
+  <section id="automations">
+    <h2>Our Automation Solutions</h2>
+    <p>Explore interactive demos and book a bot for your business:</p>
+    <button>Book a Bot</button>
+    <div class="demos">
+      <p>Demo 1: Automated Appointment Scheduling</p>
+      <p>Demo 2: Automated Email Marketing</p>
+    </div>
   </section>
 
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Have a question or ready to get started? Reach out to us below:</p>
+    <form action="#">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer Section -->
   <footer>
     <p>&copy; 2025 BeardByte Solutions™</p>
   </footer>
@@ -44,3 +98,5 @@
   <script src="script.js"></script>
 </body>
 </html>
+
+ 
