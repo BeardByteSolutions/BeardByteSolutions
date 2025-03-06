@@ -5,11 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - BeardByte Solutions</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #0a0a0a, #1f1f1f);
+            color: #d1d1d1;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 0 15px rgba(0, 188, 212, 0.6);
+        }
+        header img {
+            width: 80px;
+            border-radius: 50%;
+            transition: transform 0.3s ease-in-out;
+        }
+        header img:hover {
+            transform: rotate(360deg);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            padding: 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #d1d1d1;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #00bcd4;
+        }
+        #contact-form {
+            margin: 3rem auto;
+            padding: 2rem;
+            background: rgba(15, 15, 15, 0.9);
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 188, 212, 0.6);
+            max-width: 700px;
+            text-align: left;
+        }
+        #contact-form h1 {
+            text-align: center;
+            color: #00bcd4;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            animation: fadeIn 2s ease-in-out;
+        }
+        #contact-form p {
+            text-align: center;
+            opacity: 0.8;
+        }
+        label {
+            display: block;
+            margin: 1rem 0 0.5rem;
+            color: #00bcd4;
+            font-weight: 500;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            background: rgba(0, 0, 0, 0.7);
+            border: 1px solid #00bcd4;
+            border-radius: 8px;
+            color: #d1d1d1;
+            outline: none;
+            transition: box-shadow 0.3s;
+        }
+        input:focus, textarea:focus {
+            box-shadow: 0 0 10px rgba(0, 188, 212, 0.8);
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            background: #00bcd4;
+            border: none;
+            border-radius: 8px;
+            color: #0a0a0a;
+            font-weight: 700;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+        }
+        button:hover {
+            background: #0097a7;
+        }
+        footer {
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.8);
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
 </head>
 <body>
     <!-- Header with Logo -->
     <header>
-        <img src="https://github.com/BeardByteSolutions/BeardByteSolutions/blob/main/BeardByte.jpg?raw=true">
+        <img src="https://github.com/BeardByteSolutions/BeardByteSolutions/blob/main/BeardByte.jpg?raw=true" alt="BeardByte Logo">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
