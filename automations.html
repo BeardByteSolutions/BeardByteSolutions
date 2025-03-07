@@ -4,40 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Automations | BeardByte Solutions</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #0a0a0a, #1f1f1f);
+            color: #d1d1d1;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 0 15px rgba(0, 188, 212, 0.6);
+        }
+        header img {
+            width: 80px;
+            border-radius: 50%;
+            transition: transform 0.3s ease-in-out;
+        }
+        header img:hover {
+            transform: rotate(360deg);
+        }
+        nav a {
+            color: #d1d1d1;
+            text-decoration: none;
+            margin: 0 1rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #00bcd4;
+        }
+        main {
+            padding: 3rem 1rem;
+        }
+        h2 {
+            color: #00bcd4;
+            font-size: 2.5rem;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .coming-soon {
+            background: rgba(15, 15, 15, 0.9);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 188, 212, 0.6);
+            margin-top: 2rem;
+            animation: pulse 2s infinite alternate;
+        }
+        footer {
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.8);
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 20px rgba(0, 188, 212, 0.6); }
+            100% { box-shadow: 0 0 30px rgba(0, 188, 212, 1); }
+        }
+    </style>
 </head>
 <body>
-
-    <!-- Header -->
     <header>
-        <h1>BeardByte Solutions</h1>
+        <img src="https://github.com/BeardByteSolutions/BeardByteSolutions/blob/main/BeardByte.jpg?raw=true" alt="BeardByte Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="automations.html">Automations</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </header>
 
-    <!-- Navigation Bar -->
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-        <a href="automations.html">Automations</a>
-    </nav>
-
-    <!-- Main Content for Automations Page -->
     <main>
-        <section>
-            <h2>Automations</h2>
-            <p>We are currently working on amazing automations to help you streamline your processes.</p>
-            <div class="coming-soon">
-                <h3>Coming Soon!</h3>
-                <p>Stay tuned for cutting-edge automation tools that will take your business to the next level.</p>
-            </div>
-        </section>
+        <h2>Automations</h2>
+        <p>We are currently working on amazing automations to help you streamline your processes.</p>
+        <div class="coming-soon">
+            <h3>Coming Soon!</h3>
+            <p>Stay tuned for cutting-edge automation tools that will take your business to the next level.</p>
+        </div>
     </main>
 
-    <!-- Footer -->
     <footer>
         <p>&copy; 2025 BeardByte Solutions | All Rights Reserved</p>
     </footer>
-
 </body>
 </html>
